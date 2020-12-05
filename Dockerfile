@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # 删除vue环境配置文件（主要想通过容器的环境变量来达到不同的环境切换，以及为了部署到阿里云的容器服务，通过配置项来配置相关的环境变量，如果不需要可以删除以下代码）
-RUN rm -rf .env.*
+# RUN rm -rf .env.*
 
 ENV VUE_APP_TEST_VALUE="My test value"
 
